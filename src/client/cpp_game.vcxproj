@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F63CF28B-1C15-42CA-A9AD-77B4750D022F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cpp_game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin</OutDir>
+    <TargetName>game_debug</TargetName>
+    <IntDir>C:\ProjectGame\Debug</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin</OutDir>
+    <TargetName>game_release</TargetName>
+    <IntDir>C:\ProjectGame\Release</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;SFML_STATIC;_DEBUG;_CONSOLE;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;CMAKE_INTDIR="Debug";SFML_USE_STATIC_STD_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;lib\openal32.lib;sndfile.lib;winmm.lib;lib\freetype.lib;lib\glew32.lib;lib\jpeg.lib;opengl32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;SFML_STATIC;_CONSOLE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;SFML_USE_STATIC_STD_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;lib\openal32.lib;sndfile.lib;winmm.lib;lib\freetype.lib;lib\glew32.lib;lib\jpeg.lib;opengl32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="include\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="include\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="include\Box2D\Rope\b2Rope.cpp" />
+    <ClCompile Include="include\SFML\Audio\ALCheck.cpp" />
+    <ClCompile Include="include\SFML\Audio\AudioDevice.cpp" />
+    <ClCompile Include="include\SFML\Audio\Listener.cpp" />
+    <ClCompile Include="include\SFML\Audio\Music.cpp" />
+    <ClCompile Include="include\SFML\Audio\Sound.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundBuffer.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundBufferRecorder.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundFile.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundRecorder.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundSource.cpp" />
+    <ClCompile Include="include\SFML\Audio\SoundStream.cpp" />
+    <ClCompile Include="include\SFML\Graphics\CircleShape.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Color.cpp" />
+    <ClCompile Include="include\SFML\Graphics\ConvexShape.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Font.cpp" />
+    <ClCompile Include="include\SFML\Graphics\GLCheck.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Image.cpp" />
+    <ClCompile Include="include\SFML\Graphics\ImageLoader.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RectangleShape.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderStates.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderTarget.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImpl.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImplDefault.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImplFBO.cpp" />
+    <ClCompile Include="include\SFML\Graphics\RenderWindow.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Shader.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Shape.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Sprite.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Text.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Texture.cpp" />
+    <ClCompile Include="include\SFML\Graphics\TextureSaver.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Transform.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Transformable.cpp" />
+    <ClCompile Include="include\SFML\Graphics\Vertex.cpp" />
+    <ClCompile Include="include\SFML\Graphics\VertexArray.cpp" />
+    <ClCompile Include="include\SFML\Graphics\View.cpp" />
+    <ClCompile Include="include\SFML\Main\SFML_Main.cpp" />
+    <ClCompile Include="include\SFML\Network\Ftp.cpp" />
+    <ClCompile Include="include\SFML\Network\Http.cpp" />
+    <ClCompile Include="include\SFML\Network\IpAddress.cpp" />
+    <ClCompile Include="include\SFML\Network\Packet.cpp" />
+    <ClCompile Include="include\SFML\Network\Socket.cpp" />
+    <ClCompile Include="include\SFML\Network\SocketSelector.cpp" />
+    <ClCompile Include="include\SFML\Network\TcpListener.cpp" />
+    <ClCompile Include="include\SFML\Network\TcpSocket.cpp" />
+    <ClCompile Include="include\SFML\Network\UdpSocket.cpp" />
+    <ClCompile Include="include\SFML\Network\Win32\SocketImpl.cpp" />
+    <ClCompile Include="include\SFML\System\Clock.cpp" />
+    <ClCompile Include="include\SFML\System\Err.cpp" />
+    <ClCompile Include="include\SFML\System\Lock.cpp" />
+    <ClCompile Include="include\SFML\System\Mutex.cpp" />
+    <ClCompile Include="include\SFML\System\Sleep.cpp" />
+    <ClCompile Include="include\SFML\System\String.cpp" />
+    <ClCompile Include="include\SFML\System\Thread.cpp" />
+    <ClCompile Include="include\SFML\System\ThreadLocal.cpp" />
+    <ClCompile Include="include\SFML\System\Time.cpp" />
+    <ClCompile Include="include\SFML\System\Win32\ClockImpl.cpp" />
+    <ClCompile Include="include\SFML\System\Win32\MutexImpl.cpp" />
+    <ClCompile Include="include\SFML\System\Win32\SleepImpl.cpp" />
+    <ClCompile Include="include\SFML\System\Win32\ThreadImpl.cpp" />
+    <ClCompile Include="include\SFML\System\Win32\ThreadLocalImpl.cpp" />
+    <ClCompile Include="include\SFML\Window\Context.cpp" />
+    <ClCompile Include="include\SFML\Window\GlContext.cpp" />
+    <ClCompile Include="include\SFML\Window\GlResource.cpp" />
+    <ClCompile Include="include\SFML\Window\Joystick.cpp" />
+    <ClCompile Include="include\SFML\Window\JoystickManager.cpp" />
+    <ClCompile Include="include\SFML\Window\Keyboard.cpp" />
+    <ClCompile Include="include\SFML\Window\Mouse.cpp" />
+    <ClCompile Include="include\SFML\Window\VideoMode.cpp" />
+    <ClCompile Include="include\SFML\Window\Win32\InputImpl.cpp" />
+    <ClCompile Include="include\SFML\Window\Win32\JoystickImpl.cpp" />
+    <ClCompile Include="include\SFML\Window\Win32\VideoModeImpl.cpp" />
+    <ClCompile Include="include\SFML\Window\Win32\WglContext.cpp" />
+    <ClCompile Include="include\SFML\Window\Win32\WindowImplWin32.cpp" />
+    <ClCompile Include="include\SFML\Window\Window.cpp" />
+    <ClCompile Include="include\SFML\Window\WindowImpl.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Body.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="Draw.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="GameObject.hpp" />
+    <ClInclude Include="include\Box2D\Box2D.h" />
+    <ClInclude Include="include\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="include\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="include\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="include\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="include\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="include\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="include\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="include\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="include\Box2D\Common\b2Math.h" />
+    <ClInclude Include="include\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="include\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="include\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="include\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="include\Box2D\Rope\b2Rope.h" />
+    <ClInclude Include="include\SFML\Audio.hpp" />
+    <ClInclude Include="include\SFML\Audio\ALCheck.hpp" />
+    <ClInclude Include="include\SFML\Audio\AudioDevice.hpp" />
+    <ClInclude Include="include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundFile.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundStream.hpp" />
+    <ClInclude Include="include\SFML\Config.hpp" />
+    <ClInclude Include="include\SFML\Graphics.hpp" />
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="include\SFML\Graphics\GLCheck.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="include\SFML\Graphics\ImageLoader.hpp" />
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImpl.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplDefault.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplFBO.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="include\SFML\Graphics\stb_image\stb_image.h" />
+    <ClInclude Include="include\SFML\Graphics\stb_image\stb_image_write.h" />
+    <ClInclude Include="include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\TextureSaver.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="include\SFML\Network.hpp" />
+    <ClInclude Include="include\SFML\Network\Export.hpp" />
+    <ClInclude Include="include\SFML\Network\Ftp.hpp" />
+    <ClInclude Include="include\SFML\Network\Http.hpp" />
+    <ClInclude Include="include\SFML\Network\IpAddress.hpp" />
+    <ClInclude Include="include\SFML\Network\Packet.hpp" />
+    <ClInclude Include="include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketHandle.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketImpl.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketSelector.hpp" />
+    <ClInclude Include="include\SFML\Network\TcpListener.hpp" />
+    <ClInclude Include="include\SFML\Network\TcpSocket.hpp" />
+    <ClInclude Include="include\SFML\Network\UdpSocket.hpp" />
+    <ClInclude Include="include\SFML\Network\Win32\SocketImpl.hpp" />
+    <ClInclude Include="include\SFML\OpenGL.hpp" />
+    <ClInclude Include="include\SFML\System.hpp" />
+    <ClInclude Include="include\SFML\System\Clock.hpp" />
+    <ClInclude Include="include\SFML\System\Err.hpp" />
+    <ClInclude Include="include\SFML\System\Export.hpp" />
+    <ClInclude Include="include\SFML\System\InputStream.hpp" />
+    <ClInclude Include="include\SFML\System\Lock.hpp" />
+    <ClInclude Include="include\SFML\System\Mutex.hpp" />
+    <ClInclude Include="include\SFML\System\NonCopyable.hpp" />
+    <ClInclude Include="include\SFML\System\Sleep.hpp" />
+    <ClInclude Include="include\SFML\System\String.hpp" />
+    <ClInclude Include="include\SFML\System\Thread.hpp" />
+    <ClInclude Include="include\SFML\System\ThreadLocal.hpp" />
+    <ClInclude Include="include\SFML\System\ThreadLocalPtr.hpp" />
+    <ClInclude Include="include\SFML\System\Time.hpp" />
+    <ClInclude Include="include\SFML\System\Utf.hpp" />
+    <ClInclude Include="include\SFML\System\Vector2.hpp" />
+    <ClInclude Include="include\SFML\System\Vector3.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\ClockImpl.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\MutexImpl.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\SleepImpl.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\ThreadImpl.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\ThreadLocalImpl.hpp" />
+    <ClInclude Include="include\SFML\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\Context.hpp" />
+    <ClInclude Include="include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="include\SFML\Window\Event.hpp" />
+    <ClInclude Include="include\SFML\Window\Export.hpp" />
+    <ClInclude Include="include\SFML\Window\GlContext.hpp" />
+    <ClInclude Include="include\SFML\Window\glext\glext.h" />
+    <ClInclude Include="include\SFML\Window\glext\glxext.h" />
+    <ClInclude Include="include\SFML\Window\glext\wglext.h" />
+    <ClInclude Include="include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="include\SFML\Window\InputImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="include\SFML\Window\JoystickImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\JoystickManager.hpp" />
+    <ClInclude Include="include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoModeImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\InputImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\JoystickImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\WglContext.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\WindowImplWin32.hpp" />
+    <ClInclude Include="include\SFML\Window\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="Math.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="World.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\SFML\Graphics\Rect.inl" />
+    <None Include="include\SFML\System\String.inl" />
+    <None Include="include\SFML\System\Thread.inl" />
+    <None Include="include\SFML\System\ThreadLocalPtr.inl" />
+    <None Include="include\SFML\System\Utf.inl" />
+    <None Include="include\SFML\System\Vector2.inl" />
+    <None Include="include\SFML\System\Vector3.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b09c8084-03e0-403b-887c-478d082a4242}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\SFML\Audio\ALCheck.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\AudioDevice.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2BlockAllocator.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2Body.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2BroadPhase.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2ChainShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2CircleContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2CircleShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2CollideCircle.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2CollideEdge.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2CollidePolygon.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2Collision.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2Contact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2ContactManager.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2ContactSolver.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2Distance.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2DistanceJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2Draw.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2DynamicTree.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2EdgeShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2Fixture.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2FrictionJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2GearJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2Island.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2Joint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2Math.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2MotorJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2MouseJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Contacts\b2PolygonContact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\Shapes\b2PolygonShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2PulleyJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Rope\b2Rope.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2RopeJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2Settings.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2StackAllocator.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Collision\b2TimeOfImpact.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Common\b2Timer.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2WeldJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\Joints\b2WheelJoint.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2World.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Box2D\Dynamics\b2WorldCallbacks.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\CircleShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Clock.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Win32\ClockImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Color.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Context.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\ConvexShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Err.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Font.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\Ftp.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\GLCheck.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\GlContext.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\GlResource.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\Http.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Image.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\ImageLoader.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Win32\InputImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\IpAddress.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Joystick.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Win32\JoystickImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\JoystickManager.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Keyboard.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\Listener.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Lock.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Mouse.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\Music.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Mutex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Win32\MutexImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\Packet.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RectangleShape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderStates.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderTarget.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderTexture.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImplDefault.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderTextureImplFBO.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\RenderWindow.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Main\SFML_Main.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Shader.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Shape.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Sleep.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Win32\SleepImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\Socket.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\Win32\SocketImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\SocketSelector.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\Sound.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundBuffer.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundBufferRecorder.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundFile.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundRecorder.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundSource.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Audio\SoundStream.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Sprite.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\String.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\TcpListener.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\TcpSocket.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Text.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Texture.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\TextureSaver.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Thread.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Win32\ThreadImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\ThreadLocal.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Win32\ThreadLocalImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\System\Time.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Transform.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Transformable.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Network\UdpSocket.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\Vertex.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\VertexArray.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\VideoMode.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Win32\VideoModeImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Graphics\View.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Win32\WglContext.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Window.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\WindowImpl.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SFML\Window\Win32\WindowImplWin32.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SFML\Audio\ALCheck.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\AudioDevice.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2BlockAllocator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2Body.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\b2BroadPhase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2ChainShape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2CircleContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2CircleShape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\b2Collision.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2Contact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2ContactManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2ContactSolver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\b2Distance.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2DistanceJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2Draw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\b2DynamicTree.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2EdgeShape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2Fixture.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2FrictionJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2GearJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2GrowableStack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2Island.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2Joint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2Math.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2MotorJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2MouseJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Contacts\b2PolygonContact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2PolygonShape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2PrismaticJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2PulleyJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2RevoluteJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Rope\b2Rope.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2RopeJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2Settings.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\Shapes\b2Shape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2StackAllocator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Collision\b2TimeOfImpact.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Common\b2Timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2TimeStep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2WeldJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\Joints\b2WheelJoint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2World.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Dynamics\b2WorldCallbacks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box2D\Box2D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Clock.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Win32\ClockImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Color.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Config.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Context.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\ContextSettings.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Err.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Event.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Export.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Export.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Export.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Export.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Export.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Font.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Ftp.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\GLCheck.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\GlContext.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\glext\glext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\GlResource.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\glext\glxext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Http.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Image.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\ImageLoader.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\InputImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Win32\InputImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\InputStream.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\IpAddress.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Joystick.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\JoystickImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Win32\JoystickImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\JoystickManager.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Keyboard.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Listener.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Lock.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Mouse.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Music.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Mutex.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Win32\MutexImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\NonCopyable.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\OpenGL.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Packet.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplDefault.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplFBO.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Sleep.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Win32\SleepImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Socket.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\SocketHandle.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\SocketImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Win32\SocketImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\SocketSelector.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Sound.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundBuffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundBufferRecorder.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundFile.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundRecorder.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundSource.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundStream.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\stb_image\stb_image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\stb_image\stb_image_write.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\String.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\TcpListener.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\TcpSocket.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Text.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\TextureSaver.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Thread.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Win32\ThreadImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\ThreadLocal.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Win32\ThreadLocalImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\ThreadLocalPtr.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Time.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\UdpSocket.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Utf.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector2.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector3.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\VideoModeImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\View.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Win32\WglContext.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\glext\wglext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Window.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowImpl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Win32\WindowImplWin32.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowStyle.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Body.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\SFML\Graphics\Rect.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\String.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\Thread.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\ThreadLocalPtr.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\Utf.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\Vector2.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="include\SFML\System\Vector3.inl">
+      <Filter>include</Filter>
+    </None>
+  </ItemGroup>
+</Project>
