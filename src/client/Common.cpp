@@ -1,7 +1,5 @@
 #include "Common.hpp"
 
-World world;
-sf::Font defaultFont;
 int fps;
 int tps;
 _mouse mouse;

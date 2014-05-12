@@ -8,19 +8,13 @@ using std::endl;
 
 #pragma once
 
-#include "GameObject.hpp"
-#include "World.hpp"
 #include <SFML/System.hpp>
-
-extern sf::Font defaultFont;
-
 
 #define SECOND 1000000
 
 const float frameTime = 16666.66666666667f;
 extern int fps;
 extern int tps;
-extern World world;
 
 struct _mouse
 {
