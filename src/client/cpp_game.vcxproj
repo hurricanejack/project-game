@@ -90,11 +90,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Body.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="include\Box2D\Collision\b2BroadPhase.cpp" />
     <ClCompile Include="include\Box2D\Collision\b2CollideCircle.cpp" />
     <ClCompile Include="include\Box2D\Collision\b2CollideEdge.cpp" />
@@ -220,15 +218,13 @@
     <ClCompile Include="include\SFML\Window\WindowImpl.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="World.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Body.hpp" />
     <ClInclude Include="Common.hpp" />
     <ClInclude Include="Draw.hpp" />
     <ClInclude Include="Game.hpp" />
-    <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="include\Box2D\Box2D.h" />
     <ClInclude Include="include\Box2D\Collision\b2BroadPhase.h" />
     <ClInclude Include="include\Box2D\Collision\b2Collision.h" />
@@ -389,8 +385,11 @@
     <ClInclude Include="include\SFML\Window\WindowImpl.hpp" />
     <ClInclude Include="include\SFML\Window\WindowStyle.hpp" />
     <ClInclude Include="Math.hpp" />
-    <ClInclude Include="Player.hpp" />
-    <ClInclude Include="World.hpp" />
+    <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="SceneManager.hpp" />
+    <ClInclude Include="Scenes.hpp" />
+    <ClInclude Include="SceneSplash.hpp" />
+    <ClInclude Include="SceneTitle.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\SFML\Graphics\Rect.inl" />

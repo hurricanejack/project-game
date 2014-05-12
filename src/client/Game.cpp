@@ -1,9 +1,10 @@
 #include "Game.hpp"
+#include "Scenes.hpp"
 
 Game::Game()
 {
-	//currentWorld = world;
-	world->SetGravity(b2Vec2(0.0f, 9.8f));
+	splash = true;
+	scene.gotoScene(new SceneSplash());
 }
 
 Game::~Game()
@@ -13,16 +14,20 @@ Game::~Game()
 
 void Game::update(const RenderWindow& window, const Time& delta)
 {
-	player.update(window);
-	
+
+	// Only show splash screen for 5 seconds
+	if (splashClock.getElapsedTime().asSeconds() >= 5.0f && splash)
+	{
+		scene.gotoScene(new SceneTitle());
+		splash = false;
+	}
+
+	scene.update(window, delta);
+
 }
 
 void Game::draw(RenderWindow& window)
 {
-	player.draw(window);
+	scene.draw(window);
 }
 
-Player& Game::getPlayer()
-{
-	return player;
-}
