@@ -57,9 +57,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;SFML_STATIC;_DEBUG;_CONSOLE;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;CMAKE_INTDIR="Debug";SFML_USE_STATIC_STD_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;SFML_STATIC;_DEBUG;_CONSOLE;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;CMAKE_INTDIR="Debug";SFML_USE_STATIC_STD_LIBS;SFGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SFGUI-0.2.3\extlibs\libELL\include;SFGUI-0.2.3\include;include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -221,6 +221,80 @@
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Adjustment.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Alignment.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Bin.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Box.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Button.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Canvas.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\CheckButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ComboBox.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Container.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Context.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\DejaVuSansFont.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Desktop.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engine.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Button.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\CheckButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\ComboBox.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Entry.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Frame.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Image.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Label.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Notebook.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\ProgressBar.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Scale.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Scrollbar.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\ScrolledWindow.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Separator.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\SpinButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Spinner.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\ToggleButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Engines\BREW\Window.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Entry.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\FileResourceLoader.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Fixed.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Frame.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Image.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Label.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Misc.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Notebook.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Object.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\Grammar.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\GrammarPredicates.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\GrammarSelector.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\GrammarSimpleSelector.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\GrammarStatement.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\GrammarToken.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Parsers\ThemeParser\Parse.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Primitive.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ProgressBar.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\RadioButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Range.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Renderer.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Renderers\VertexArrayRenderer.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Renderers\VertexBufferRenderer.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\RendererViewport.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\RenderQueue.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ResourceLoader.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ResourceManager.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Scale.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Scrollbar.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ScrolledWindow.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Selector.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Separator.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\SFGUI.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Signal.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\SpinButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Spinner.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Table.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\TableCell.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\TableOptions.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\ToggleButton.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Viewport.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Widget.cpp" />
+    <ClCompile Include="SFGUI-0.2.3\src\SFGUI\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.hpp" />
@@ -389,6 +463,7 @@
     <ClInclude Include="Object.hpp" />
     <ClInclude Include="ObjectBox.hpp" />
     <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="SceneEditor.hpp" />
     <ClInclude Include="SceneManager.hpp" />
     <ClInclude Include="Scenes.hpp" />
     <ClInclude Include="SceneSplash.hpp" />

@@ -4,6 +4,7 @@
 #include <SFML/System.hpp>
 #include "Scene.hpp"
 #include "SceneTest.hpp"
+#include "SceneEditor.hpp"
 #include "Common.hpp"
 
 using sf::RenderWindow;
@@ -50,6 +51,11 @@ public:
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Return))
 		{
 			nextScene = new SceneTest();
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E))
+		{
+			nextScene = new SceneEditor();
 		}
 
 		// Stop game when the user presses Escape
