@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include "Scene.hpp"
+#include "SceneTitle.hpp"
+#include "Common.hpp"
 
 using sf::RenderWindow;
 using sf::Time;
@@ -12,6 +14,7 @@ class SceneSplash : public Scene
 	private:
 		sf::Texture texture;
 		sf::Sprite sprite;
+		sf::Clock clock;
 		bool scaled;
 
 	public:
@@ -43,6 +46,12 @@ class SceneSplash : public Scene
 
 				scaled = true;
 			}
+
+			if (isKeyPressedAny() || clock.getElapsedTime().asSeconds() >= 5.0f)
+			{
+				nextScene = new SceneTitle();
+			}
+
 		}
 
 		void draw(RenderWindow& window)

@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include "Scene.hpp"
+#include "SceneTest.hpp"
+#include "Common.hpp"
 
 using sf::RenderWindow;
 using sf::Time;
@@ -42,6 +44,18 @@ public:
 				);
 
 			scaled = true;
+		}
+
+		// Start a test game
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Return))
+		{
+			nextScene = new SceneTest();
+		}
+
+		// Stop game when the user presses Escape
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
+		{
+			gameRunning = false;
 		}
 
 	}

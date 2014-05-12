@@ -408,6 +408,9 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SFML\Audio\ALCheck.hpp">
@@ -912,6 +915,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SceneSplash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBox.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

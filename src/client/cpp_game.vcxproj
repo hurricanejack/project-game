@@ -218,6 +218,7 @@
     <ClCompile Include="include\SFML\Window\WindowImpl.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
   </ItemGroup>
@@ -385,10 +386,13 @@
     <ClInclude Include="include\SFML\Window\WindowImpl.hpp" />
     <ClInclude Include="include\SFML\Window\WindowStyle.hpp" />
     <ClInclude Include="Math.hpp" />
+    <ClInclude Include="Object.hpp" />
+    <ClInclude Include="ObjectBox.hpp" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="SceneManager.hpp" />
     <ClInclude Include="Scenes.hpp" />
     <ClInclude Include="SceneSplash.hpp" />
+    <ClInclude Include="SceneTest.hpp" />
     <ClInclude Include="SceneTitle.hpp" />
   </ItemGroup>
   <ItemGroup>

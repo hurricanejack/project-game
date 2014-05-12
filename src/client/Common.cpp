@@ -1,5 +1,6 @@
 #include "Common.hpp"
 
+bool gameRunning;
 int fps;
 int tps;
 _mouse mouse;
@@ -52,4 +53,17 @@ void clearConsole()
 	// Put the cursor at its home coordinates. 
 	SetConsoleCursorPosition(hStdout, coordScreen);
 
+}
+
+
+bool isKeyPressedAny()
+{
+	for (int i = 0; i < sf::Keyboard::Key::KeyCount; i++)
+	{
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(i)))
+		{
+			return true;
+		}
+	}
+	return false;
 }

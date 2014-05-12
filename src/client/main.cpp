@@ -6,8 +6,6 @@
 #include "Game.hpp"
 #include <vector>
 
-bool gameRunning{ true };
-
 using std::vector;
 using sf::RenderWindow;
 using sf::Time;
@@ -19,6 +17,8 @@ using sf::Font;
 
 int main()
 {
+
+	gameRunning = true;
 
 	Game game;
 
@@ -58,6 +58,8 @@ int main()
 	while (gameRunning)
 	{
 
+		sf::Clock c;
+
 		mouse.update(window);
 
 		circle.setPosition(mouse.x, mouse.y);
@@ -94,9 +96,10 @@ int main()
 		// Update object states
 		while (frameCounter > 0) // Frames to update
 		{
-			game.update(window, elapsed);
+			game.update(window, c.getElapsedTime());
 			frameCounter--;
 			ticks++;
+			c.restart();
 		}
 
 		sf::Text text;

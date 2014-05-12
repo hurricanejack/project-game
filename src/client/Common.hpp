@@ -12,6 +12,7 @@ using std::endl;
 
 #define SECOND 1000000
 
+extern bool gameRunning;
 const float frameTime = 16666.66666666667f;
 extern int fps;
 extern int tps;
@@ -32,3 +33,4 @@ struct _mouse
 extern _mouse mouse;
 
 void clearConsole();
+bool isKeyPressedAny();
