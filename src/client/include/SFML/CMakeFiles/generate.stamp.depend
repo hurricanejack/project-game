@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/SFML-master/src/SFML/CMakeLists.txt
+E:/SFML-master/cmake/Macros.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="GlContext.cpp" />
+    <ClCompile Include="GlResource.cpp" />
+    <ClCompile Include="Joystick.cpp" />
+    <ClCompile Include="JoystickManager.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="VideoMode.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowImpl.cpp" />
+    <ClCompile Include="Win32\WglContext.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\InputImpl.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\JoystickImpl.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\VideoModeImpl.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\WindowImplWin32.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\SFML\Window\Context.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Export.hpp" />
+    <ClInclude Include="GlContext.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Event.hpp" />
+    <ClInclude Include="InputImpl.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="JoystickImpl.hpp" />
+    <ClInclude Include="JoystickManager.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="VideoModeImpl.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\Window.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="WindowImpl.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="Win32\WglContext.hpp">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\InputImpl.hpp">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\JoystickImpl.hpp">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\WindowImplWin32.hpp">
+      <Filter>windows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="windows">
+      <UniqueIdentifier>{BE192951-A30E-43E6-9348-90C6A73234C8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

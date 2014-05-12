@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ALCheck.cpp" />
+    <ClCompile Include="AudioDevice.cpp" />
+    <ClCompile Include="Listener.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundBuffer.cpp" />
+    <ClCompile Include="SoundBufferRecorder.cpp" />
+    <ClCompile Include="SoundFile.cpp" />
+    <ClCompile Include="SoundRecorder.cpp" />
+    <ClCompile Include="SoundSource.cpp" />
+    <ClCompile Include="SoundStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ALCheck.hpp" />
+    <ClInclude Include="AudioDevice.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="SoundFile.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="..\..\..\include\SFML\Audio\SoundStream.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
