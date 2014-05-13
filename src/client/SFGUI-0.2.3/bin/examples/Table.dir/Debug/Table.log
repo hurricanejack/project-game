@@ -1,0 +1,16 @@
+﻿Build started 13/05/2014 11:15:27.
+     1>Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\examples\Table.vcxproj" on node 4 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/examples/CMakeLists.txt
+         CMake does not need to re-run because E:\Github\project-game\src\client\SFGUI-0.2.3\bin\examples\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Table.dir\Debug\\" /Fd"Table.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\examples\Table.cpp
+         Table.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Github\project-game\src\client\SFGUI-0.2.3\bin\examples\Debug\Table.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "..\Debug\sfgui-d.lib" "E:\SFML-master\lib\Debug\sfml-graphics-d.lib" "E:\SFML-master\lib\Debug\sfml-window-d.lib" "E:\SFML-master\lib\Debug\sfml-system-d.lib" E:\cpp_game\cpp_game\lib\glew32s.lib glu32.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Debug/Table.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Debug/Table.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug Table.dir\Debug\Table.obj
+         Table.vcxproj -> E:\Github\project-game\src\client\SFGUI-0.2.3\bin\examples\Debug\Table.exe
+     1>Done Building Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\examples\Table.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.14

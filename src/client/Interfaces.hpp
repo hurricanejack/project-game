@@ -1,0 +1,4 @@
+#pragma once
+#define INTERFACE_WORLD_EDITOR_FIRST 0
+#define INTERFACE_MENU_MAIN 1
+

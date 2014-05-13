@@ -5,6 +5,7 @@
 
 using sf::RenderWindow;
 using sf::Time;
+using sf::Event;
 
 class Scene
 {
@@ -17,6 +18,7 @@ class Scene
 		Scene();
 
 		// Scene events
+		virtual void pollEvent(Event&);
 		virtual void update(const RenderWindow&, const Time&);
 		virtual void draw(RenderWindow&);
 

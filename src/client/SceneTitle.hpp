@@ -6,6 +6,7 @@
 #include "SceneTest.hpp"
 #include "SceneEditor.hpp"
 #include "Common.hpp"
+#include "InterfaceManager.hpp"
 
 using sf::RenderWindow;
 using sf::Time;
@@ -16,10 +17,13 @@ private:
 	sf::Texture texture;
 	sf::Sprite sprite;
 	bool scaled;
+	InterfaceManager interfaceManager;
 
 public:
 	SceneTitle() :Scene()
 	{
+		interfaceManager.setScene(this);
+		interfaceManager.set(INTERFACE_MENU_MAIN);
 		scaled = false;
 		// Constructor
 		if (!texture.loadFromFile("Resources\\gfx\\title.png"))
@@ -30,9 +34,16 @@ public:
 		sprite.setTexture(texture);
 	}
 
+	void pollEvent(Event& event)
+	{
+		interfaceManager.pollEvent(event);
+	}
+
 	// Scene events
 	void update(const RenderWindow& window, const Time& delta)
 	{
+		interfaceManager.update(window, delta);
+
 		if (!scaled)
 		{
 
@@ -69,6 +80,34 @@ public:
 	void draw(RenderWindow& window)
 	{
 		window.draw(sprite);
+		interfaceManager.draw(window);
+	}
+
+	void onButtonSingleplayer()
+	{
+		nextScene = new SceneTest();
+	}
+
+	void onButtonMultiplayer()
+	{
+
+	}
+
+	void onButtonWorldEditor()
+	{
+		nextScene = new SceneEditor();
+	}
+
+	void onButtonOptions()
+	{
+
+	}
+
+	void onButtonExit()
+	{
+		gameRunning = false;
 	}
 
 };
+
+

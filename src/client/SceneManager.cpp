@@ -12,7 +12,10 @@ SceneManager::SceneManager()
 
 SceneManager::~SceneManager()
 {
-	delete currentScene;
+	if (currentScene != 0)
+	{
+		delete currentScene;
+	}
 }
 
 void SceneManager::gotoScene(Scene* scene)
@@ -28,8 +31,15 @@ void SceneManager::gotoScene(Scene* scene)
 	currentScene = scene;
 }
 
+void SceneManager::pollEvent(Event& event)
+{
+	if (currentScene == 0){ return; }
+	currentScene->pollEvent(event);
+}
+
 void SceneManager::update(const RenderWindow& window, const Time& time)
 {
+	if (currentScene == 0){ return; }
 
 	// Update scene
 	currentScene->update(window, time);
@@ -45,5 +55,6 @@ void SceneManager::update(const RenderWindow& window, const Time& time)
 
 void SceneManager::draw(RenderWindow& window)
 {
+	if (currentScene == 0){ return; }
 	currentScene->draw(window);
 }

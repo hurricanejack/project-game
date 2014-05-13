@@ -12,6 +12,11 @@ Game::~Game()
 
 }
 
+void Game::pollEvent(Event& event)
+{
+	scene.pollEvent(event);
+}
+
 void Game::update(const RenderWindow& window, const Time& delta)
 {
 
