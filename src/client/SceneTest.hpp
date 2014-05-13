@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include "Scene.hpp"
+#include "Scenes.hpp"
 #include "Common.hpp"
 #include "ObjectBox.hpp"
 

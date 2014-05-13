@@ -5,12 +5,19 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+#include <string>
+using std::string;
 
 #pragma once
 
 #include <SFML/System.hpp>
-
 #define SECOND 1000000
+
+struct Property
+{
+	string Name;
+	string Value;
+};
 
 extern bool gameRunning;
 const float frameTime = 16666.66666666667f;

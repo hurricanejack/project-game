@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
+#include "InterfaceManager.hpp"
 
 using sf::RenderWindow;
 using sf::Time;
@@ -12,7 +13,9 @@ class Scene
 	private:
 
 	protected:
-		Scene* nextScene;
+		int nextScene;
+		InterfaceManager interfaceManager;
+		int guiWidth, guiHeight;
 
 	public:
 		Scene();
@@ -22,6 +25,9 @@ class Scene
 		virtual void update(const RenderWindow&, const Time&);
 		virtual void draw(RenderWindow&);
 
-		Scene* getNextScene();
+		int getGUIWidth();
+		int getGUIHeight();
+
+		int getNextScene();
 
 };

@@ -4,7 +4,7 @@
 Game::Game()
 {
 	splash = true;
-	scene.gotoScene(new SceneSplash());
+	scene.gotoScene(SCENE_SPLASH);
 }
 
 Game::~Game()

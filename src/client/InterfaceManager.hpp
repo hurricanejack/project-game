@@ -3,13 +3,15 @@
 
 #pragma once
 
-#include "Scene.hpp"
+//#include "Scene.hpp"
 #include <SFGUI\SFGUI.hpp>
 #include <SFML\Graphics.hpp>
 
 using sf::RenderWindow;
 using sf::Time;
 using sf::Event;
+
+class Scene;
 
 class InterfaceManager
 {
@@ -18,6 +20,7 @@ class InterfaceManager
 		sfg::SFGUI gui;
 		sfg::Desktop desktop;
 		Scene* scene;
+		void* userData;
 	public:
 		InterfaceManager();
 		~InterfaceManager();
@@ -28,5 +31,9 @@ class InterfaceManager
 		void pollEvent(Event&);
 		void update(const RenderWindow&, const Time&);
 		void draw(RenderWindow&);
+
+		Interface* getInterface();
+		void* getUser();
+		void setUser(void*);
 };
 

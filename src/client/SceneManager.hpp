@@ -18,7 +18,7 @@ class SceneManager
 		SceneManager();
 		~SceneManager();
 
-		void gotoScene(Scene*);	// Force the scene manager to goto a specific scene
+		void gotoScene(const int&);	// Force the scene manager to goto a specific scene
 
 		// Scene manager events
 		void pollEvent(Event&);

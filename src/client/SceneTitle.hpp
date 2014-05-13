@@ -2,11 +2,10 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
-#include "Scene.hpp"
-#include "SceneTest.hpp"
-#include "SceneEditor.hpp"
 #include "Common.hpp"
 #include "InterfaceManager.hpp"
+#include "Scene.hpp"
+#include "Scenes.hpp"
 
 using sf::RenderWindow;
 using sf::Time;
@@ -17,7 +16,6 @@ private:
 	sf::Texture texture;
 	sf::Sprite sprite;
 	bool scaled;
-	InterfaceManager interfaceManager;
 
 public:
 	SceneTitle() :Scene()
@@ -61,12 +59,12 @@ public:
 		// Start a test game
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Return))
 		{
-			nextScene = new SceneTest();
+			nextScene = SCENE_TEST;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E))
 		{
-			nextScene = new SceneEditor();
+			nextScene = SCENE_EDITOR;
 		}
 
 		// Stop game when the user presses Escape
@@ -85,7 +83,7 @@ public:
 
 	void onButtonSingleplayer()
 	{
-		nextScene = new SceneTest();
+		nextScene = SCENE_TEST;
 	}
 
 	void onButtonMultiplayer()
@@ -95,7 +93,7 @@ public:
 
 	void onButtonWorldEditor()
 	{
-		nextScene = new SceneEditor();
+		nextScene = SCENE_EDITOR;
 	}
 
 	void onButtonOptions()

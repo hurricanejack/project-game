@@ -1,11 +1,9 @@
-﻿Build started 13/05/2014 11:15:29.
-     1>Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\ALL_BUILD.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 13/05/2014 18:00:07.
+     1>Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\ALL_BUILD.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
-         Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt
-         CMake does not need to re-run because E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp is up-to-date.
          Build all projects
-     1>Done Building Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\ALL_BUILD.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\ALL_BUILD.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.15
+Time Elapsed 00:00:00.41

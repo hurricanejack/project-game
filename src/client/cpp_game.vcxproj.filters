@@ -30,6 +30,9 @@
     <Filter Include="Header Files\Managers">
       <UniqueIdentifier>{4aa3649c-9123-4134-8afd-16283d978024}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\World Editor">
+      <UniqueIdentifier>{2c9d4fc4-b8ec-4607-9871-9525ad03f52a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -201,6 +204,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InterfaceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEditorObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -396,6 +402,12 @@
     </ClInclude>
     <ClInclude Include="SceneManager.hpp">
       <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceWorldEditor.hpp">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldEditorObject.hpp">
+      <Filter>Header Files\World Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

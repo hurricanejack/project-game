@@ -34,7 +34,9 @@ int main()
 
 	// Figure out which screen resolution to go for
 	vector<sf::VideoMode> modes = sf::VideoMode::getFullscreenModes();
-	RenderWindow window(modes.at(0), "ProjectGame Alpha R1", sf::Style::Titlebar | sf::Style::Close | sf::Style::Fullscreen);
+	//RenderWindow window(modes.at(0), "ProjectGame Alpha R1", sf::Style::Titlebar | sf::Style::Close | sf::Style::Fullscreen);
+	RenderWindow window(sf::VideoMode::getDesktopMode(), "ProjectGame Alpha R1", sf::Style::Titlebar | sf::Style::Close);
+	
 
 	// Declare a window
 	//RenderWindow window(sf::VideoMode(1280, 720), "ProjectGame Alpha R1", sf::Style::Titlebar | sf::Style::Close);
@@ -109,7 +111,7 @@ int main()
 		text.setFont(defaultFont);
 		text.setColor(Color::Black);
 		text.setString("FPS: "+to_string(fps)+" TPS: "+to_string(tps));
-		text.setPosition(30.0f, 30.0f);
+		text.setPosition(window.getSize().x-450.0f, 15.0f);
 
 		// Display objects
 		window.clear(Color::White);

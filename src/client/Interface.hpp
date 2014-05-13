@@ -9,9 +9,13 @@ using std::endl;
 
 class Interface
 {
+	protected:
+		void* userData;
 	public:
 		Interface();
-		~Interface();
+		virtual ~Interface();
 		virtual void setup(sfg::Desktop&);
+		virtual void remove(sfg::Desktop&);
 		virtual string getName();
+		void setUser(void*);
 };

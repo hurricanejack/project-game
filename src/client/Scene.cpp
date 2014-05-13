@@ -3,12 +3,19 @@
 Scene::Scene()
 {
 	// Constructor
-	nextScene = 0;
+	nextScene = -1;
+	guiWidth = 0;
+	guiHeight = 0;
 }
 
 void Scene::update(const RenderWindow& window, const Time& time)
 {
 	// Do nothing
+	if (guiWidth == 0 || guiHeight == 0)
+	{
+		guiWidth = window.getSize().x;
+		guiHeight = window.getSize().y;
+	}
 }
 
 void Scene::draw(RenderWindow& window)
@@ -16,7 +23,7 @@ void Scene::draw(RenderWindow& window)
 	// Do nothing
 }
 
-Scene* Scene::getNextScene()
+int Scene::getNextScene()
 {
 	return nextScene;
 }
@@ -24,4 +31,14 @@ Scene* Scene::getNextScene()
 void Scene::pollEvent(Event&)
 {
 	// Do nothing
+}
+
+int Scene::getGUIWidth()
+{
+	return guiWidth;
+}
+
+int Scene::getGUIHeight()
+{
+	return guiHeight;
 }

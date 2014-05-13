@@ -47,15 +47,16 @@ public:
 		button_options->GetSignal(sfg::Button::OnLeftClick).Connect(std::bind(&SceneTitle::onButtonOptions, title));
 		button_exit->GetSignal(sfg::Button::OnLeftClick).Connect(std::bind(&SceneTitle::onButtonExit, title));
 
-		box->Pack(button_singleplayer);
-		box->Pack(button_multiplayer);
-		box->Pack(button_worldeditor);
-		box->Pack(button_options);
-		box->Pack(button_exit);
+		box->Pack(button_singleplayer,false);
+		box->Pack(button_multiplayer, false);
+		box->Pack(button_worldeditor, false);
+		box->Pack(button_options, false);
+		box->Pack(button_exit,false);
 
 		window->Add(box);
 
 		// Add elements to desktop
+
 		
 
 	}
@@ -63,6 +64,11 @@ public:
 	void setup(sfg::Desktop& desktop)
 	{
 		desktop.Add(window);
+	}
+
+	void remove(sfg::Desktop& desktop)
+	{
+		desktop.Remove(window);
 	}
 
 	string getName()

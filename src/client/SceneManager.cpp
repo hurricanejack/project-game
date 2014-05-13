@@ -1,3 +1,9 @@
+#include "SceneTitle.hpp"
+#include "SceneSplash.hpp"
+#include "SceneTest.hpp"
+#include "SceneEditor.hpp"
+#include "Scenes.hpp"
+
 #include "SceneManager.hpp"
 #include <iostream>
 using namespace std;
@@ -18,7 +24,7 @@ SceneManager::~SceneManager()
 	}
 }
 
-void SceneManager::gotoScene(Scene* scene)
+void SceneManager::gotoScene(const int& s)
 {
 
 	// Free current scene
@@ -27,8 +33,16 @@ void SceneManager::gotoScene(Scene* scene)
 		delete currentScene;
 	}
 
-	// Replace current scene
-	currentScene = scene;
+	currentScene = 0;
+
+	switch (s)
+	{
+		case SCENE_TITLE:	currentScene = new SceneTitle();	break;
+		case SCENE_SPLASH:	currentScene = new SceneSplash();	break;
+		case SCENE_TEST:	currentScene = new SceneTest();		break;
+		case SCENE_EDITOR:	currentScene = new SceneEditor();	break;
+	}
+
 }
 
 void SceneManager::pollEvent(Event& event)
@@ -45,8 +59,8 @@ void SceneManager::update(const RenderWindow& window, const Time& time)
 	currentScene->update(window, time);
 	
 	// Check for next scene
-	Scene* nextScene = currentScene->getNextScene();
-	if (nextScene != 0)
+	int nextScene = currentScene->getNextScene();
+	if (nextScene >= 0)
 	{
 		gotoScene(nextScene);
 	}

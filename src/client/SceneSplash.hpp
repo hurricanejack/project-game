@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include "Scene.hpp"
-#include "SceneTitle.hpp"
+#include "Scenes.hpp"
 #include "Common.hpp"
 
 using sf::RenderWindow;
@@ -49,7 +49,7 @@ class SceneSplash : public Scene
 
 			if (isKeyPressedAny() || clock.getElapsedTime().asSeconds() >= 5.0f)
 			{
-				nextScene = new SceneTitle();
+				nextScene = SCENE_TITLE;
 			}
 
 		}
