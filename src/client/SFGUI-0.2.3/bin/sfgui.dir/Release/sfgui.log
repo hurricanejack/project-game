@@ -1,0 +1,201 @@
+﻿Build started 13/05/2014 11:13:02.
+     1>Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\sfgui.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt
+         CMake does not need to re-run because E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\\" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Adjustment.cpp ..\src\SFGUI\Alignment.cpp ..\src\SFGUI\Bin.cpp ..\src\SFGUI\Box.cpp ..\src\SFGUI\Canvas.cpp ..\src\SFGUI\Container.cpp ..\src\SFGUI\Context.cpp ..\src\SFGUI\Desktop.cpp ..\src\SFGUI\Engine.cpp ..\src\SFGUI\Engines\BREW.cpp ..\src\SFGUI\FileResourceLoader.cpp ..\src\SFGUI\Fixed.cpp ..\src\SFGUI\Misc.cpp ..\src\SFGUI\Object.cpp ..\src\SFGUI\Parsers\ThemeParser\Grammar.cpp ..\src\SFGUI\Parsers\ThemeParser\GrammarPredicates.cpp ..\src\SFGUI\Parsers\ThemeParser\GrammarSelector.cpp ..\src\SFGUI\Parsers\ThemeParser\GrammarSimpleSelector.cpp ..\src\SFGUI\Parsers\ThemeParser\GrammarStatement.cpp ..\src\SFGUI\Parsers\ThemeParser\GrammarToken.cpp ..\src\SFGUI\Parsers\ThemeParser\Parse.cpp ..\src\SFGUI\Primitive.cpp ..\src\SFGUI\RadioButton.cpp ..\src\SFGUI\Range.cpp ..\src\SFGUI\RenderQueue.cpp ..\src\SFGUI\Renderer.cpp ..\src\SFGUI\RendererViewport.cpp ..\src\SFGUI\Renderers\VertexArrayRenderer.cpp ..\src\SFGUI\Renderers\VertexBufferRenderer.cpp ..\src\SFGUI\ResourceLoader.cpp ..\src\SFGUI\ResourceManager.cpp ..\src\SFGUI\SFGUI.cpp ..\src\SFGUI\Selector.cpp ..\src\SFGUI\Signal.cpp ..\src\SFGUI\Table.cpp ..\src\SFGUI\TableCell.cpp ..\src\SFGUI\TableOptions.cpp ..\src\SFGUI\Viewport.cpp ..\src\SFGUI\Widget.cpp ..\src\SFGUI\DejaVuSansFont.cpp
+         Adjustment.cpp
+         Alignment.cpp
+         Bin.cpp
+         Box.cpp
+         Canvas.cpp
+         Container.cpp
+         Context.cpp
+         Desktop.cpp
+         Engine.cpp
+         BREW.cpp
+         FileResourceLoader.cpp
+         Fixed.cpp
+         Misc.cpp
+         Object.cpp
+         Grammar.cpp
+         GrammarPredicates.cpp
+         GrammarSelector.cpp
+         GrammarSimpleSelector.cpp
+         GrammarStatement.cpp
+         GrammarToken.cpp
+         Generating Code...
+         Compiling...
+         Parse.cpp
+         Primitive.cpp
+         RadioButton.cpp
+         Range.cpp
+         RenderQueue.cpp
+         Renderer.cpp
+         RendererViewport.cpp
+         VertexArrayRenderer.cpp
+         VertexBufferRenderer.cpp
+         ResourceLoader.cpp
+         ResourceManager.cpp
+         SFGUI.cpp
+         Selector.cpp
+         Signal.cpp
+         Table.cpp
+         TableCell.cpp
+         TableOptions.cpp
+         Viewport.cpp
+         Widget.cpp
+         DejaVuSansFont.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Button.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Button.cpp
+         Button.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/CheckButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\CheckButton.cpp
+         CheckButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/ComboBox.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\ComboBox.cpp
+         ComboBox.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Button.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Button.cpp
+         Button.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/CheckButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\CheckButton.cpp
+         CheckButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/ComboBox.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\ComboBox.cpp
+         ComboBox.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Entry.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Entry.cpp
+         Entry.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Frame.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Frame.cpp
+         Frame.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Image.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Image.cpp
+         Image.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Label.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Label.cpp
+         Label.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Notebook.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Notebook.cpp
+         Notebook.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/ProgressBar.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\ProgressBar.cpp
+         ProgressBar.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Scale.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Scale.cpp
+         Scale.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Scrollbar.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Scrollbar.cpp
+         Scrollbar.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/ScrolledWindow.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\ScrolledWindow.cpp
+         ScrolledWindow.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Separator.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Separator.cpp
+         Separator.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/SpinButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\SpinButton.cpp
+         SpinButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Spinner.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Spinner.cpp
+         Spinner.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/ToggleButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\ToggleButton.cpp
+         ToggleButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Engines/BREW/Window.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Engines\BREW\Window.cpp
+         Window.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Entry.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Entry.cpp
+         Entry.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Frame.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Frame.cpp
+         Frame.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Image.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Image.cpp
+         Image.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Label.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Label.cpp
+         Label.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Notebook.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Notebook.cpp
+         Notebook.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/ProgressBar.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\ProgressBar.cpp
+         ProgressBar.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Scale.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Scale.cpp
+         Scale.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Scrollbar.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Scrollbar.cpp
+         Scrollbar.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/ScrolledWindow.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\ScrolledWindow.cpp
+         ScrolledWindow.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Separator.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Separator.cpp
+         Separator.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/SpinButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\SpinButton.cpp
+         SpinButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Spinner.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Spinner.cpp
+         Spinner.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/ToggleButton.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\ToggleButton.cpp
+         ToggleButton.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Github\project-game\src\client\SFGUI-0.2.3\include" /I"E:\SFML-master\include" /IE:\cpp_game\cpp_game\include /I"E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GLEW_STATIC /D SFGUI_INCLUDE_FONT /D WIN32 /D "CMAKE_INTDIR=\"Release\"" /D SFGUI_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"sfgui.dir\Release\/src/SFGUI/Window.cpp.obj" /Fd"sfgui.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\SFGUI\Window.cpp
+         Window.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Github\project-game\src\client\SFGUI-0.2.3\bin\Release\sfgui.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\SFML-master\lib\Release\sfml-graphics.lib" "E:\SFML-master\lib\Release\sfml-window.lib" "E:\SFML-master\lib\Release\sfml-system.lib" E:\cpp_game\cpp_game\lib\glew32s.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"E:/Github/project-game/src/client/SFGUI-0.2.3/bin/Release/sfgui.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/Github/project-game/src/client/SFGUI-0.2.3/bin/Release/sfgui.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /DLL sfgui.dir\Release\Adjustment.obj
+         sfgui.dir\Release\Alignment.obj
+         sfgui.dir\Release\Bin.obj
+         sfgui.dir\Release\Box.obj
+         sfgui.dir\Release\Canvas.obj
+         sfgui.dir\Release\Container.obj
+         sfgui.dir\Release\Context.obj
+         sfgui.dir\Release\Desktop.obj
+         sfgui.dir\Release\Engine.obj
+         sfgui.dir\Release\BREW.obj
+         sfgui.dir\Release\FileResourceLoader.obj
+         sfgui.dir\Release\Fixed.obj
+         sfgui.dir\Release\Misc.obj
+         sfgui.dir\Release\Object.obj
+         sfgui.dir\Release\Grammar.obj
+         sfgui.dir\Release\GrammarPredicates.obj
+         sfgui.dir\Release\GrammarSelector.obj
+         sfgui.dir\Release\GrammarSimpleSelector.obj
+         sfgui.dir\Release\GrammarStatement.obj
+         sfgui.dir\Release\GrammarToken.obj
+         sfgui.dir\Release\Parse.obj
+         sfgui.dir\Release\Primitive.obj
+         sfgui.dir\Release\RadioButton.obj
+         sfgui.dir\Release\Range.obj
+         sfgui.dir\Release\RenderQueue.obj
+         sfgui.dir\Release\Renderer.obj
+         sfgui.dir\Release\RendererViewport.obj
+         sfgui.dir\Release\VertexArrayRenderer.obj
+         sfgui.dir\Release\VertexBufferRenderer.obj
+         sfgui.dir\Release\ResourceLoader.obj
+         sfgui.dir\Release\ResourceManager.obj
+         sfgui.dir\Release\SFGUI.obj
+         sfgui.dir\Release\Selector.obj
+         sfgui.dir\Release\Signal.obj
+         sfgui.dir\Release\Table.obj
+         sfgui.dir\Release\TableCell.obj
+         sfgui.dir\Release\TableOptions.obj
+         sfgui.dir\Release\Viewport.obj
+         sfgui.dir\Release\Widget.obj
+         sfgui.dir\Release\DejaVuSansFont.obj
+         sfgui.dir\Release\/src/SFGUI/Button.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/CheckButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/ComboBox.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Button.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/CheckButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/ComboBox.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Entry.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Frame.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Image.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Label.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Notebook.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/ProgressBar.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Scale.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Scrollbar.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/ScrolledWindow.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Separator.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/SpinButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Spinner.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/ToggleButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Engines/BREW/Window.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Entry.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Frame.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Image.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Label.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Notebook.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/ProgressBar.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Scale.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Scrollbar.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/ScrolledWindow.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Separator.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/SpinButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Spinner.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/ToggleButton.cpp.obj
+         sfgui.dir\Release\/src/SFGUI/Window.cpp.obj
+            Creating library E:/Github/project-game/src/client/SFGUI-0.2.3/bin/Release/sfgui.lib and object E:/Github/project-game/src/client/SFGUI-0.2.3/bin/Release/sfgui.exp
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         sfgui.vcxproj -> E:\Github\project-game\src\client\SFGUI-0.2.3\bin\Release\sfgui.dll
+     1>Done Building Project "E:\Github\project-game\src\client\SFGUI-0.2.3\bin\sfgui.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:05.19

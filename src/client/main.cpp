@@ -5,6 +5,7 @@
 #include <conio.h>
 #include "Game.hpp"
 #include <vector>
+#include <SFGUI\SFGUI.hpp>
 
 using std::vector;
 using sf::RenderWindow;
@@ -77,6 +78,8 @@ int main()
 		Event event;
 		while (window.pollEvent(event))
 		{
+			game.pollEvent(event);
+			//desktop.HandleEvent(event);
 			switch (event.type)
 			{
 				case Event::Closed:

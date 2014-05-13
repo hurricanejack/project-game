@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{43284EEE-2A10-450C-9D8B-A5F35C7B02A8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Github\project-game\src\client\SFGUI-0.2.3\include;E:\SFML-master\include;E:\cpp_game\cpp_game\include;E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Github\project-game\src\client\SFGUI-0.2.3\include;E:\SFML-master\include;E:\cpp_game\cpp_game\include;E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Github\project-game\src\client\SFGUI-0.2.3\include;E:\SFML-master\include;E:\cpp_game\cpp_game\include;E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Github\project-game\src\client\SFGUI-0.2.3\include;E:\SFML-master\include;E:\cpp_game\cpp_game\include;E:\Github\project-game\src\client\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/Github/project-game/src/client/SFGUI-0.2.3 -BE:/Github/project-game/src/client/SFGUI-0.2.3/bin --check-stamp-file E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeSystem.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/Github/project-game/src/client/SFGUI-0.2.3 -BE:/Github/project-game/src/client/SFGUI-0.2.3/bin --check-stamp-file E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeSystem.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/Github/project-game/src/client/SFGUI-0.2.3 -BE:/Github/project-game/src/client/SFGUI-0.2.3/bin --check-stamp-file E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeSystem.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/Github/project-game/src/client/SFGUI-0.2.3 -BE:/Github/project-game/src/client/SFGUI-0.2.3/bin --check-stamp-file E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeSystem.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;E:\Github\project-game\src\client\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\24ced8703cb9bd1e6e00d1d6cc1a6d44\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/bin/CMakeFiles/24ced8703cb9bd1e6e00d1d6cc1a6d44/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/bin/CMakeFiles/24ced8703cb9bd1e6e00d1d6cc1a6d44/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/bin/CMakeFiles/24ced8703cb9bd1e6e00d1d6cc1a6d44/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/Github/project-game/src/client/SFGUI-0.2.3/bin/CMakeFiles/24ced8703cb9bd1e6e00d1d6cc1a6d44/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Github\project-game\src\client\SFGUI-0.2.3\bin\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Box.vcxproj">
+      <Project>2CEDF030-95F4-4953-A20D-FF6AA52D4762</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Buttons.vcxproj">
+      <Project>7F2A8A2E-421D-4EFF-81A4-A2D01AF8206F</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Canvas.vcxproj">
+      <Project>36F5D980-F575-4003-9337-9D889EE9DDD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/ComboBox.vcxproj">
+      <Project>0907AB55-451C-4D53-B454-36CF4681A576</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Desktop.vcxproj">
+      <Project>D4684F0F-E967-4610-A214-ADA3059FC543</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Entry.vcxproj">
+      <Project>F6FE3596-34D3-4C25-88AA-EEDF1920C545</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/GuessMyNumber.vcxproj">
+      <Project>DE841CCC-3969-4490-B53E-5069B847256D</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/HelloWorld.vcxproj">
+      <Project>B7038DB7-EA69-4B58-AC1F-BC39EA3BF244</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Image.vcxproj">
+      <Project>8C4EDBA1-2602-4A10-8F7B-8177444C1EDE</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Label.vcxproj">
+      <Project>A1935077-6852-4C12-8762-89986330B303</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Layout.vcxproj">
+      <Project>4276D38C-950C-4E5E-AFE5-CB87CCA6939D</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Multiview.vcxproj">
+      <Project>3A4968C3-7C07-417B-BAAF-1A494EDE5EB6</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Notebook.vcxproj">
+      <Project>50C5D844-8732-44A8-AF95-AB4B123C0FDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/OpenGL.vcxproj">
+      <Project>441EF864-BF32-43BA-9697-3AC8F0DB797F</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/ProgressBar.vcxproj">
+      <Project>114294D9-E6AE-4747-8BAE-55A6198EC6F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Range.vcxproj">
+      <Project>C96A3547-C203-432D-9561-BD5296C3F7F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/ScrolledWindowViewport.vcxproj">
+      <Project>FC41C17C-1DF1-4F86-A246-76D9C0215D77</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Signals.vcxproj">
+      <Project>61988B97-F226-4934-B1AA-579CEA6164D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/SpinButton.vcxproj">
+      <Project>9ABE8F53-F52A-4325-ABA4-7BBF55CFB445</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Spinner.vcxproj">
+      <Project>23090CF0-F209-487A-95AB-08E33B266427</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Table.vcxproj">
+      <Project>3B35FF26-A215-4F38-BA91-084939D20E3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/Window.vcxproj">
+      <Project>2B477028-CBBE-47C3-A5B5-C32F045BAD74</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/ZERO_CHECK.vcxproj">
+      <Project>920351A2-0CC8-4FBB-90A4-9C3A48E6C0DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/sfgui.vcxproj">
+      <Project>D9262A25-B4A6-44C2-BFB7-AAD5A0239A51</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/Github/project-game/src/client/SFGUI-0.2.3/bin/examples/test.vcxproj">
+      <Project>3DA2DB33-6E0F-41DF-84F2-A60D68B78CDF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

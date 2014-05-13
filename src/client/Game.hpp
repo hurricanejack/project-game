@@ -6,6 +6,7 @@
 
 using sf::RenderWindow;
 using sf::Time;
+using sf::Event;
 
 class Game
 {
@@ -18,6 +19,7 @@ class Game
 		Game();
 		~Game();
 
+		void pollEvent(Event&);
 		void update(const RenderWindow&, const Time&);
 		void draw(RenderWindow&);
 };
