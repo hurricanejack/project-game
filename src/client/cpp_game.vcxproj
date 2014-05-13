@@ -59,7 +59,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;CMAKE_INTDIR="Debug";SFML_USE_STATIC_STD_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>SFGUI-0.2.3\extlibs\libELL\include;SFGUI-0.2.3\include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SFGUI-0.2.3\extlibs\libELL\include;pugixml\src;SFGUI-0.2.3\include;include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -80,7 +80,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CONSOLE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;UNICODE;SFML_USE_STATIC_STD_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>SFGUI-0.2.3\extlibs\libELL\include;SFGUI-0.2.3\include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>pugixml\src;SFGUI-0.2.3\extlibs\libELL\include;SFGUI-0.2.3\include;include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,6 +146,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Properties.cpp" />
+    <ClCompile Include="pugixml\src\pugixml.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="WorldEditor.cpp" />
@@ -210,6 +212,9 @@
     <ClInclude Include="Math.hpp" />
     <ClInclude Include="Object.hpp" />
     <ClInclude Include="ObjectBox.hpp" />
+    <ClInclude Include="Properties.hpp" />
+    <ClInclude Include="pugixml\src\pugiconfig.hpp" />
+    <ClInclude Include="pugixml\src\pugixml.hpp" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="SceneEditor.hpp" />
     <ClInclude Include="SceneManager.hpp" />

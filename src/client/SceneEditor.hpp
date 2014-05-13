@@ -47,9 +47,9 @@ class SceneEditor : public Scene
 			
 
 			WorldEditorObject test;
-			test.addProperty("id", "0");
-			test.addProperty("name", "Crate");
-			test.addProperty("width", "32");
+			test.getProperties(). addProperty("id", "0");
+			test.getProperties().addProperty("name", "Crate");
+			test.getProperties().addProperty("width", "32");
 
 			worldEditor.addObject(test);
 

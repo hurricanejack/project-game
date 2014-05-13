@@ -1,0 +1,5 @@
+<properties>
+	<property name="id" type="number">0</property>
+	<property name="name" type="string">object</property>
+	<property name="image" type="file">image.png</property>
+</properties>

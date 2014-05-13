@@ -72,6 +72,13 @@ class InterfaceWorldEditor : public Interface
 
 		SceneEditor* scene;
 
+		void loadImageFor(sfg::ToggleButton::Ptr& w, const string& fn)
+		{
+			sf::Image img;
+			if (!img.loadFromFile(fn)){ return; }
+			w->SetImage(sfg::Image::Create(img));
+		}
+
 	public:
 		// Constructor
 		InterfaceWorldEditor(Scene* s) :Interface()
@@ -108,29 +115,36 @@ class InterfaceWorldEditor : public Interface
 				boxLayer = sfg::Box::Create(sfg::Box::Orientation::HORIZONTAL, 5.0f);
 
 				buttonLayerBackground = sfg::ToggleButton::Create();
-				buttonLayerBackground->SetLabel("Background");
+				//buttonLayerBackground->SetLabel("Background");
 				buttonLayerBackground->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerBackground, this));
 
 				buttonLayerTerrain = sfg::ToggleButton::Create();
-				buttonLayerTerrain->SetLabel("Terrain");
+				//buttonLayerTerrain->SetLabel("Terrain");
 				buttonLayerTerrain->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerTerrain, this));
 
 				buttonLayerObject = sfg::ToggleButton::Create();
-				buttonLayerObject->SetLabel("Object");
+				//buttonLayerObject->SetLabel("Object");
 				buttonLayerObject->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerObject, this));
 
 				buttonLayerForeground = sfg::ToggleButton::Create();
-				buttonLayerForeground->SetLabel("Foreground");
+				//buttonLayerForeground->SetLabel("Foreground");
 				buttonLayerForeground->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerForeground, this));
 
 				buttonLayerAudio = sfg::ToggleButton::Create();
-				buttonLayerAudio->SetLabel("Audio");
+				//buttonLayerAudio->SetLabel("Audio");
 				buttonLayerAudio->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerAudio, this));
 
 				buttonLayerAll = sfg::ToggleButton::Create();
-				buttonLayerAll->SetLabel("All");
+				//buttonLayerAll->SetLabel("All");
 				buttonLayerAll->SetActive(true);
 				buttonLayerAll->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonLayerAll,this));
+
+				loadImageFor(buttonLayerBackground, "Resources\\gfx\\worldeditor\\layer_background.png");
+				loadImageFor(buttonLayerTerrain, "Resources\\gfx\\worldeditor\\layer_terrain.png");
+				loadImageFor(buttonLayerObject, "Resources\\gfx\\worldeditor\\layer_object.png");
+				loadImageFor(buttonLayerForeground, "Resources\\gfx\\worldeditor\\layer_foreground.png");
+				loadImageFor(buttonLayerAudio, "Resources\\gfx\\worldeditor\\layer_sound.png");
+				loadImageFor(buttonLayerAll, "Resources\\gfx\\worldeditor\\layer_all.png");
 
 				boxLayer->Pack(buttonLayerBackground);
 				boxLayer->Pack(buttonLayerTerrain);
@@ -167,9 +181,31 @@ class InterfaceWorldEditor : public Interface
 			for (unsigned int i = 0; i < tools.size(); i++)
 			{
 				Tool tool = tools.at(i);
+				bool loaded = false;
+				if (!tool.Loaded)
+				{
+					if (tool.load())
+					{
+						loaded = true;
+					}
+				}
+				else
+				{
+					loaded = true;
+				}
 				sfg::ToggleButton::Ptr button = sfg::ToggleButton::Create();
-				button->SetLabel(tool.Name);
-				button->SetImage(tool.Image);
+				
+				button->SetLabel("");
+
+				if (loaded)
+				{
+					button->SetImage(tool.Image);
+				}
+				else
+				{
+					button->SetLabel(tool.Name);
+				}
+
 				button->GetSignal(sfg::ToggleButton::OnLeftClick).Connect(std::bind(&InterfaceWorldEditor::onButtonTool, this));
 				if (i == 0)
 				{

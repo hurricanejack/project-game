@@ -51,3 +51,8 @@ void WorldEditor::addObject(const WorldEditorObject& o)
 {
 	objects.push_back(o);
 }
+
+Properties& WorldEditor::getProperties()
+{
+	return properties;
+}

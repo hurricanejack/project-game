@@ -1,6 +1,7 @@
 #pragma once
 
 #include "WorldEditorObject.hpp"
+#include "Properties.hpp"
 
 class WorldEditor
 {
@@ -11,6 +12,8 @@ class WorldEditor
 		bool saveWorld(const string&);
 		bool loadWorld(const string&);
 
+		Properties properties;
+
 	public:
 		WorldEditor();
 
@@ -20,6 +23,7 @@ class WorldEditor
 		bool publishProject();
 
 		vector<WorldEditorObject>& getObjects();
+		Properties& getProperties();
 
 		void addObject(const WorldEditorObject&);
 

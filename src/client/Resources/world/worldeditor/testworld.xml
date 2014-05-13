@@ -1,0 +1,20 @@
+<world>
+	<!-- World properties -->
+	<properties>
+		<property name="name" type="string">Test World</property>
+	</properties>
+	<!-- World objects -->
+	<objects>
+		<object>
+			<!-- Properties that overwrite object ones -->
+			<properties>
+				<property name="id" type="number">1</property>
+				<property name="x" type="number">200</property>
+				<property name="y" type="number">300</property>
+				<property name="name" type="string">testworld.object.test</property>
+			</properties>
+			<!-- Object information -->
+			<type>object.test</type>
+		</object>
+	</objects>
+</world>

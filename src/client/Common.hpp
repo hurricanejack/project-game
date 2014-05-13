@@ -17,6 +17,7 @@ struct Property
 {
 	string Name;
 	string Value;
+	string Type;
 };
 
 extern bool gameRunning;
